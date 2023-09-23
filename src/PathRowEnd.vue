@@ -10,7 +10,7 @@
   border-right: var(--path-width) var(--path-color) solid;
   border-radius: 0 calc(var(--path-width) * 3) 0 0;
   position: absolute;
-  width: 100%;
+  width: calc(100% - var(--path-width));
   top: calc(50% - var(--path-width) / 2);
   bottom: 0;
   right: 0;

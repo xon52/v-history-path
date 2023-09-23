@@ -26,16 +26,17 @@
     <div class="code">
       <h3>Code used</h3>
       <pre>{{
-`<VSnakePath
+`<VHistoryPath
   :items="items"
   :item-height="${itemHeight}"
   :item-width="${itemWidth}"
   :item-gap="${itemGap}"
+  :path-width="${pathWidth}"
   :path-color="${pathColor}"
   v-slot="{ item }"
 >
   <CustomComponent :iterated-item="item" />
-</VSnakePath>`
+</VHistoryPath>`
 }}
         </pre>
     </div>
@@ -47,7 +48,7 @@
 </template>
 
 <script setup lang="ts">
-import { itemGap, itemHeight, itemWidth, pathWidth, pathColor } from '@/store'
+import { itemGap, itemHeight, itemWidth, pathWidth, pathColor } from '../store'
 import ExampleItem from './ExampleItem.vue'
 </script>
 

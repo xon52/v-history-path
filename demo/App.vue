@@ -6,7 +6,7 @@
       :item-height="+itemHeight"
       :item-width="+itemWidth"
       :item-gap="+itemGap"
-      :path-width="pathWidth"
+      :path-width="+pathWidth"
       :path-color="pathColor"
       v-slot="{ item }"
     >
@@ -18,12 +18,12 @@
 </template>
 
 <script setup lang="ts">
-import ExampleItem from './demoComponents/ExampleItem.vue'
-import VHistoryPath from 'v-history-path'
-// import VHistoryPath from './v-history-path/VHistoryPath.vue'
-import DemoControls from './demoComponents/DemoControls.vue'
-import { itemGap, itemHeight, itemWidth, pathWidth, pathColor } from '@/store'
-import items from '@/items'
+import ExampleItem from './components/ExampleItem.vue'
+// import VHistoryPath from 'v-history-path'
+import VHistoryPath from '../src'
+import DemoControls from './components/DemoControls.vue'
+import { itemGap, itemHeight, itemWidth, pathWidth, pathColor } from './store'
+import items from './items'
 </script>
 
 <style>
@@ -42,4 +42,3 @@ main {
   text-align: center;
 }
 </style>
-./v-history-path/VSnakePath.vue
