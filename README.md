@@ -4,7 +4,8 @@
 
 &nbsp;
 
-<video controls  src="https://github.com/xon52/v-history-path/blob/main/demo/readme/v-history-path%20demo.mp4"  poster="./demo/readme/v-history-path.png" title="v-history-path Video"></video>
+https://github.com/xon52/v-history-path/assets/30713944/55b60098-def4-4343-8952-d531e355ecbe
+
 
 &nbsp;
 
