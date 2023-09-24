@@ -1,10 +1,10 @@
 # v-history-path
 
-<h3>A lightweight <a href="http://vuejs.org">Vue 3</a> component for the 🐍 snake history path effect. It takes in any custom component and joins them with somewhat customizable arrows.</h3>
+<h3>A lightweight <a href="http://vuejs.org" target="_blank">Vue 3</a> component for the 🐍 snake history path effect. It takes in any custom component and joins them with somewhat customizable arrows.</h3>
 
 &nbsp;
 
-Demo: https://stackblitz.com/edit/vitejs-vite-matcje
+Demo: <a href="https://stackblitz.com/edit/vitejs-vite-matcje?file=src%2FApp.vue" target="_blank">StackBlitz</a>
 
 &nbsp;
 
@@ -36,22 +36,22 @@ import import VHistoryPath from 'v-history-path'
 &nbsp;
 
 ### Props
-- **items** : `Array<T>`
-- **itemHeight**: `number`
-- **itemWidth**: `number`
-- **itemGap**: `number`
-- **pathWidth**: `number`
-- **pathColor**: `string`
+- items : `Array<T>`
+- itemHeight: `number`
+- itemWidth: `number`
+- itemGap: `number`
+- pathWidth: `number`
+- pathColor: `string`
 
 ### Scoped Slot Props
-- **item** : `<T>`
+- item : `<T>`
 
 &nbsp;
 
 ## Contribution
 
-Very happy for improvements - this was just something I needed and I thought would be interesting to make reusable. Submit a PR 🚀
+Very happy for improvements - this was just something I needed and I thought would be interesting to make reusable. Submit a PR 🚀.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License.
