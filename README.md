@@ -1,6 +1,10 @@
 # v-history-path
 
-<h3>A lightweight <a href="http://vuejs.org">Vue 3</a> component for the 🐍 **snake history path** effect. It takes in any custom component and joins them with somewhat customizable arrows.</h3>
+<h3>A lightweight <a href="http://vuejs.org">Vue 3</a> component for the 🐍 snake history path effect. It takes in any custom component and joins them with somewhat customizable arrows.</h3>
+
+&nbsp;
+
+Demo: https://stackblitz.com/edit/vitejs-vite-matcje
 
 &nbsp;
 
