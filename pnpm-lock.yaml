@@ -2593,7 +2593,7 @@ packages:
     dev: true
 
   file:v-history-path-0.1.0.tgz(vue@3.3.4):
-    resolution: {integrity: sha512-fCg9+v9+3LCN70euBf1jIOlCLfeGokmaRsMvLY5cu/1AQ+5VDBrYd/GA8is8mXEwBOxi2EAYUO6eeoJCZWIezQ==, tarball: file:v-history-path-0.1.0.tgz}
+    resolution: {integrity: sha512-YDKMcGZ6SvyYtYg8vaKhYSsTRDKxHzNBCkePrjoiI7F4VpvA/wU59KOEZx1cscTbDsc4q3Pxg/K5kWOL16+njw==, tarball: file:v-history-path-0.1.0.tgz}
     id: file:v-history-path-0.1.0.tgz
     name: v-history-path
     version: 0.1.0
