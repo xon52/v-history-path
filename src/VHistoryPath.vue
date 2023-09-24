@@ -3,7 +3,7 @@
     <div class="node-container">
       <template v-for="({ type, dir, payload }, ni) in nodes" :key="ni">
         <NodeItem :type="type" :dir="dir" :payload="payload" v-slot="{ item }">
-          <slot :item="item" />
+          <slot :item="item as T" />
         </NodeItem>
       </template>
       <!-- Float Clear -->
@@ -12,37 +12,28 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts" generic="T">
 import NodeItem from './NodeItem.vue'
 import { computed, ref, type Ref, onMounted, onUnmounted } from 'vue'
 import { getItemsPerRow, getNodes } from './helpers'
 
-const props = defineProps({
-  items: {
-    type: Array,
-    required: true
-  },
-  itemHeight: {
-    type: Number,
-    default: 100
-  },
-  itemWidth: {
-    type: Number,
-    default: 200
-  },
-  itemGap: {
-    type: Number,
-    default: 20
-  },
-  pathColor: {
-    type: String,
-    default: 'grey'
-  },
-  pathWidth: {
-    type: Number,
-    default: 20
+const props = withDefaults(
+  defineProps<{
+    items: Array<T>
+    itemHeight: number
+    itemWidth: number
+    itemGap: number
+    pathWidth: number
+    pathColor: string
+  }>(),
+  {
+    itemHeight: 100,
+    itemWidth: 200,
+    itemGap: 20,
+    pathWidth: 20,
+    pathColor: 'grey'
   }
-})
+)
 
 const root: Ref<Element | null> = ref(null)
 const rootWidth = ref(0)

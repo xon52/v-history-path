@@ -1,11 +1,29 @@
 {
   "name": "v-history-path",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "A lightweight Vue 3 component for the 🐍 snake history path effect. It takes in any custom component and joins them with somewhat customizable arrows.",
+  "author": "Keagan Chisnall",
+  "bugs": {
+    "url": "https://github.com/xon52/v-history-path/issues"
+  },
+  "homepage": "https://github.com/xon52/v-history-path#readme",
+  "keywords": [
+    "vue",
+    "snake",
+    "history",
+    "path",
+    "component"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xon52/v-history-path.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "pack": "vite build && pnpm pack && pnpm i ./v-history-path-0.1.0.tgz && vite"
+    "pack": "vite build && pnpm pack && pnpm i -D ./v-history-path-0.1.0.tgz && vite"
   },
   "main": "./dist/v-history-path.umd.js",
   "module": "./dist/v-history-path.mjs",
@@ -29,7 +47,6 @@
     "vue": "^3.x"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.3.3",
     "@tsconfig/node18": "^18.2.2",
     "@types/node": "^18.17.15",
     "@vitejs/plugin-vue": "^4.3.4",

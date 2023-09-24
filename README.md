@@ -1,52 +1,57 @@
 # v-history-path
 
-This template should help get you started developing with Vue 3 in Vite.
+### A lightweight [Vue3](http://vuejs.org) component for the 🐍 **snake history path** effect. It takes in any custom component and joins them with somewhat customizable arrows.
 
-## Recommended IDE Setup
+&nbsp;
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="./demo/readme/v-history-path.png">
+    <source src="./demo/readme/v-history-path demo.mp4" type="video/mp4">
+  </video>
+</figure>
 
-## Type Support for `.vue` Imports in TS
+&nbsp;
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Usage
+Install: &nbsp;&nbsp; `npm i v-history-path`
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```js
+import import VHistoryPath from 'v-history-path'
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
+```html
+<VHistoryPath
+  :items="items"
+  :item-height="100"
+  :item-width="200"
+  :item-gap="40"
+  :path-width="8"
+  :path-color="grey"
+  v-slot="{ item }"
+>
+  <YourCustomComponent :iterated-item="item" />
+</VHistoryPath>
 ```
 
-### Type-Check, Compile and Minify for Production
+&nbsp;
 
-```sh
-npm run build
-```
+### Props
+- **items** : `Array<T>`
+- **itemHeight**: `number`
+- **itemWidth**: `number`
+- **itemGap**: `number`
+- **pathWidth**: `number`
+- **pathColor**: `string`
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Scoped Slot Props
+- **item** : `<T>`
 
-```sh
-npm run test:unit
-```
+&nbsp;
 
-### Lint with [ESLint](https://eslint.org/)
+## Contribution
 
-```sh
-npm run lint
-```
+Very happy for improvements - this was just something I needed and I thought would be interesting to make reusable. Submit a PR 🚀
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
