@@ -4,8 +4,7 @@
 
 &nbsp;
 
-https://github.com/xon52/v-history-path/assets/30713944/55b60098-def4-4343-8952-d531e355ecbe
-
+https://github.com/xon52/v-history-path/assets/30713944/c25227c3-301b-454d-bb29-e5bd7db03a8f
 
 &nbsp;
 
