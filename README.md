@@ -1,14 +1,10 @@
 # v-history-path
 
-### A lightweight [Vue3](http://vuejs.org) component for the 🐍 **snake history path** effect. It takes in any custom component and joins them with somewhat customizable arrows.
+<h3>A lightweight <a href="http://vuejs.org">Vue 3</a> component for the 🐍 **snake history path** effect. It takes in any custom component and joins them with somewhat customizable arrows.</h3>
 
 &nbsp;
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="./demo/readme/v-history-path.png">
-    <source src="./demo/readme/v-history-path demo.mp4" type="video/mp4">
-  </video>
-</figure>
+<video controls  src="demo/readme/v-history-path%20demo.mp4"  poster="./demo/readme/v-history-path.png" title="v-history-path Video"></video>
 
 &nbsp;
 
