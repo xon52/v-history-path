@@ -1,5 +1,5 @@
-export type Node = {
+export type Node<T> = {
   type: string
-  payload?: any
+  payload?: T
   dir?: string
 }

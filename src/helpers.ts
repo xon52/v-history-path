@@ -4,14 +4,14 @@ export const getItemsPerRow = (rowWidth: number, itemGap: number, itemWidth: num
   return Math.floor((rowWidth - 3 * itemGap) / (itemGap + itemWidth)) || 1
 }
 
-export const getNodes = (items: any[], itemsPerRow: number) => {
+export const getNodes = <T>(items: Array<T>, itemsPerRow: number) => {
   // Count how many rows that many items per row will require
   const rowCount = Math.ceil(items.length / itemsPerRow)
 
   // Early return
   if (rowCount < 1) return []
 
-  const nodes: Node[] = []
+  const nodes: Node<T>[] = []
   // Iterate rows (r: row, d: direction, j:total items) to populate node collection
   for (let r = 0, d = 'right', j = 0; r < rowCount; r++, d = d === 'right' ? 'left' : 'right') {
     // Start each row with a row-start

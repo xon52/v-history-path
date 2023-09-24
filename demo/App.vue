@@ -19,8 +19,8 @@
 
 <script setup lang="ts">
 import ExampleItem from './components/ExampleItem.vue'
-// import VHistoryPath from 'v-history-path'
-import VHistoryPath from '../src'
+import VHistoryPath from 'v-history-path'
+// import VHistoryPath from '../src'
 import DemoControls from './components/DemoControls.vue'
 import { itemGap, itemHeight, itemWidth, pathWidth, pathColor } from './store'
 import items from './items'
