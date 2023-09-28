@@ -16,7 +16,7 @@ https://github.com/xon52/v-history-path/assets/30713944/c25227c3-301b-454d-bb29-
 Install: &nbsp;&nbsp; `npm i v-history-path`
 
 ```js
-import import VHistoryPath from 'v-history-path'
+import VHistoryPath from 'v-history-path'
 ```
 
 ```html
