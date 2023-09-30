@@ -1,6 +1,6 @@
 <template>
   <div v-if="type === 'item'" :class="`item ${dir ? dir : ''}`">
-    <slot :item="payload" />
+    <slot :item="payload"></slot>
   </div>
   <!-- Path -->
   <div v-else :class="`path ${dir ? dir : ''}`">
