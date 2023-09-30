@@ -3,7 +3,7 @@
     <div class="node-container">
       <template v-for="({ type, dir, payload }, ni) in nodes" :key="ni">
         <NodeItem :type="type" :dir="dir" :payload="payload" v-slot="{ item }">
-          <slot :item="item as T" />
+          <slot :item="item"></slot>
         </NodeItem>
       </template>
       <!-- Float Clear -->
@@ -17,9 +17,13 @@ import NodeItem from './NodeItem.vue'
 import { computed, ref, type Ref, onMounted, onUnmounted } from 'vue'
 import { getItemsPerRow, getNodes } from './helpers'
 
+defineSlots<{
+  default?: (props: { item: T }) => T
+}>()
+
 const props = withDefaults(
   defineProps<{
-    items: Array<T>
+    items: T[]
     itemHeight: number
     itemWidth: number
     itemGap: number
